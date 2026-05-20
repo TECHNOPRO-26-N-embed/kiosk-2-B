@@ -25,7 +25,7 @@ int load_products(const char *file_path, Product products[], int max_products) {
         int token_count = 0;
         int id = 0;
         int price = 0;
-        int is_active = 1;
+        int  is_active= 1;
         double product_tax_rate = 0.0;
         char category[MAX_CATEGORY_LEN] = "食品";
         char *tok;

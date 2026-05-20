@@ -128,7 +128,7 @@ SelectProductResult select_product(const Product products[],
         printf("9: カート確認へ\n");
 
         /* 0:カテゴリへ戻る, 9:カート確認へ遷移 */
-        if (!prompt_int("商品ID > ", &product_id)) {
+        if (!prompt_int("選択 > ", &product_id)) {
             return SELECT_PRODUCT_ABORT;
         }
         if (product_id == 0) {
@@ -281,7 +281,7 @@ void run_purchase_flow(Product products[], int product_count) {
         }
         if (strcmp(command, "d") == 0 || strcmp(command, "D") == 0) {
             int line_no = 0;
-            if (!prompt_int("削除する行番号 > ", &line_no)) {
+            if (!prompt_int("削除する商品番号 > ", &line_no)) {
                 return;
             }
             delete_cart_item(cart_items, &cart_count, line_no);
