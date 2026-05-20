@@ -1,7 +1,7 @@
 @echo off
 echo.
 echo === コンパイル中 ===
-gcc src\main.c -o app.exe -Wall
+gcc src\*.c -o app.exe -Wall
 if %ERRORLEVEL% EQU 0 (
     echo.
     echo [成功] app.exe が生成されました

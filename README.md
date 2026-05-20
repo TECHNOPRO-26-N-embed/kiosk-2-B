@@ -45,7 +45,7 @@
 ### 方法2: ターミナルで直接実行
 
 ```
-gcc src\main.c -o app.exe -Wall
+gcc src\*.c -o app.exe -Wall
 .\app.exe
 ```
 
