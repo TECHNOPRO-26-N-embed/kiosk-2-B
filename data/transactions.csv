@@ -1,0 +1,2 @@
+transaction_id,timestamp,payment_method,tax_mode,subtotal_excl_tax,tax_amount,total_incl_tax,item_count
+20260520153808-004,20260520153808,CARD,IN_STORE,100,10,110,1
